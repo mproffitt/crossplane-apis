@@ -2,6 +2,11 @@ apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:
   creationTimestamp: null
+  labels:
+    component: xrepository
+    owner: choclab
+    provider: github
+    type: pull-request
   name: github-pull-request
 spec:
   compositeTypeRef:
@@ -9,6 +14,21 @@ spec:
     kind: PullRequest
   mode: Pipeline
   pipeline:
+  - functionRef:
+      name: function-kcl
+    input:
+      apiVersion: krm.kcl.dev/v1alpha1
+      kind: KCLInput
+      metadata:
+        creationTimestamp: null
+      spec:
+        config: {}
+        credentials:
+          password: ""
+          username: ""
+        source: oci://ghcr.io/mproffitt/github-pull-request:0.0.1
+        target: ""
+    step: step-kcl-create-pr
   - functionRef:
       name: function-auto-ready
     step: function-auto-ready

@@ -209,6 +209,9 @@ spec:
             type: object
           status:
             properties:
+              bob:
+                description: Example status to get things going
+                type: string
               conditions:
                 description: Conditions of the resource.
                 items:

@@ -58,4 +58,9 @@ type PullRequestParameters struct {
 
 type PullRequestStatus struct {
 	xpv1.ConditionedStatus `json:",inline"`
+
+	// Example status to get things going
+	//
+	// +optional
+	Bob string `json:"bob,omitempty"`
 }
