@@ -60,7 +60,7 @@ func (b *builder) Build(c build.CompositionSkeleton) {
 					Kind:       "KCLInput",
 				},
 				Spec: xkcl.RunSpec{
-					Source: "oci://ghcr.io/mproffitt/kcl-test:0.0.1-e74de4b",
+					Source: "oci://ghcr.io/mproffitt/kcl-test:0.0.1-008d647",
 				},
 			},
 		})
