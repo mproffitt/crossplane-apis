@@ -5,7 +5,7 @@ items = [
     **common.dxr
     **{
         status = {
-            hello: get(common.oxr, "spec.message")
+            hello: common.get(common.oxr, "spec.message")
           }
       }
   }
