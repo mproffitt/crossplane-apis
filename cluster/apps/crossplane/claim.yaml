@@ -1,5 +1,5 @@
 apiVersion: xrepository.crossplane.choclab.net/v1alpha1
-kind: PullRequest
+kind: PullRequestClaim
 metadata:
   name: test
 spec:
