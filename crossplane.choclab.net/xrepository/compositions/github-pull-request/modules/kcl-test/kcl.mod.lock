@@ -1,6 +1,6 @@
 [dependencies]
 
 [dependencies.common]
-version = "0.0.1-0944f52"
-oci_tag = "0.0.1-0944f52"
-full_name = "common_0.0.1-0944f52"
+version = "0.0.1-c267d7c"
+oci_tag = "0.0.1-c267d7c"
+full_name = "common_0.0.1-c267d7c"

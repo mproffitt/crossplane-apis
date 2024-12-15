@@ -51,7 +51,7 @@ func (b *builder) Build(c build.CompositionSkeleton) {
 	// Add pipeline steps here
 	c.NewPipelineStep("step-kcl-do-something").
 		WithFunctionRef(xapiextv1.FunctionReference{
-			Name: "function-kcl",
+			Name: "crossplane-contrib-function-kcl",
 		}).
 		WithInput(build.ObjectKindReference{
 			Object: &xkcl.KCLInput{
@@ -70,6 +70,6 @@ func (b *builder) Build(c build.CompositionSkeleton) {
 	//   created MRs are ready
 	c.NewPipelineStep("function-auto-ready").
 		WithFunctionRef(xapiextv1.FunctionReference{
-			Name: "function-auto-ready",
+			Name: "crossplane-contrib-function-auto-ready",
 		})
 }
