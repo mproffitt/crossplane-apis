@@ -1,6 +1,0 @@
-[dependencies]
-  [dependencies.common]
-    name = "common"
-    full_name = "common_0.0.1-d5043c3"
-    version = "0.0.1-d5043c3"
-    sum = "VQWLT8e7FBOLDHkGMWU/xVtol7XpjnA9XFiUplkzvDw="

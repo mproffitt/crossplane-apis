@@ -69,6 +69,9 @@ spec:
                   - '*'
                   type: string
                 type: array
+              message:
+                description: The message to start the XRD development with
+                type: string
               providerConfigRef:
                 default:
                   name: default
@@ -206,6 +209,8 @@ spec:
                 - name
                 - namespace
                 type: object
+            required:
+            - message
             type: object
           status:
             properties:
@@ -255,6 +260,9 @@ spec:
                 x-kubernetes-list-map-keys:
                 - type
                 x-kubernetes-list-type: map
+              hello:
+                description: Message will be output here on the first revision
+                type: string
             type: object
         required:
         - spec

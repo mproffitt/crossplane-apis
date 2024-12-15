@@ -2,6 +2,9 @@ apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:
   creationTimestamp: null
+  labels:
+    owner: mproffitt
+    provider: github
   name: github-pull-request
 spec:
   compositeTypeRef:
@@ -9,6 +12,21 @@ spec:
     kind: PullRequest
   mode: Pipeline
   pipeline:
+  - functionRef:
+      name: function-kcl
+    input:
+      apiVersion: krm.kcl.dev/v1alpha1
+      kind: KCLInput
+      metadata:
+        creationTimestamp: null
+      spec:
+        config: {}
+        credentials:
+          password: ""
+          username: ""
+        source: oci://ghcr.io/mproffitt/kcl-test:0.0.1-6877f4a
+        target: ""
+    step: step-kcl-do-something
   - functionRef:
       name: function-auto-ready
     step: function-auto-ready
