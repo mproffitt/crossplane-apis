@@ -3,4 +3,4 @@ kind: Configuration
 metadata:
   name: xrepository
 spec:
-  package: ghcr.io/xrepository:0.0.1-8d849d3
+  package: ghcr.io/mproffitt/xrepository:0.0.1-8d849d3
