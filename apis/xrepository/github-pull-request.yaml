@@ -1,0 +1,14 @@
+apiVersion: apiextensions.crossplane.io/v1
+kind: Composition
+metadata:
+  creationTimestamp: null
+  name: github-pull-request
+spec:
+  compositeTypeRef:
+    apiVersion: xrepository.crossplane.choclab.net/v1alpha1
+    kind: PullRequest
+  mode: Pipeline
+  pipeline:
+  - functionRef:
+      name: function-auto-ready
+    step: function-auto-ready
