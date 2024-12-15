@@ -1,1 +1,12 @@
-The_first_kcl_program = 'Hello World!'
+import common
+
+items = [
+  {
+    **common.dxr
+    **{
+        status = {
+            hello: get(oxr, "spec.message")
+          }
+      }
+  }
+]
