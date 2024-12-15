@@ -2,5 +2,6 @@ apiVersion: xrepository.crossplane.choclab.net/v1alpha1
 kind: PullRequestClaim
 metadata:
   name: test
+  namespace: default
 spec:
   message: Hello world
