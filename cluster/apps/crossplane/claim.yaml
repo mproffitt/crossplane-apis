@@ -1,0 +1,6 @@
+apiVersion: xrepository.crossplane.choclab.net/v1alpha1
+kind: PullRequest
+metadata:
+  name: test
+spec:
+  message: Hello world

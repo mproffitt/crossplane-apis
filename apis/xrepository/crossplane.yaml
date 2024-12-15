@@ -11,3 +11,5 @@ spec:
   dependsOn:
     - function: xpkg.upbound.io/crossplane-contrib/function-auto-ready
       version: ">=0.3.0"
+    - function: xpkg.upbound.io/crossplane-contrib/function-kcl
+      version: ">=0.10.10"
