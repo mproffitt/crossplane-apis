@@ -1,0 +1,6 @@
+apiVersion: pkg.crossplane.io/v1
+kind: Configuration
+metadata:
+  name: xrepository
+spec:
+  package: ghcr.io/xrepository:0.0.1-8d849d3
