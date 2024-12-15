@@ -24,7 +24,7 @@ spec:
         credentials:
           password: ""
           username: ""
-        source: oci://ghcr.io/mproffitt/kcl-test:0.0.1-e74de4b
+        source: oci://ghcr.io/mproffitt/kcl-test:0.0.1-008d647
         target: ""
     step: step-kcl-do-something
   - functionRef:
