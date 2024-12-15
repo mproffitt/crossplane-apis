@@ -1,6 +1,8 @@
 [dependencies]
-
-[dependencies.common]
-version = "0.0.1-c267d7c"
-oci_tag = "0.0.1-c267d7c"
-full_name = "common_0.0.1-c267d7c"
+  [dependencies.common]
+    name = "common"
+    full_name = "common_0.0.1-008d647"
+    version = "0.0.1-008d647"
+    reg = "ghcr.io"
+    repo = "mproffitt/common"
+    oci_tag = "0.0.1-008d647"
