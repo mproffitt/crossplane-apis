@@ -4,7 +4,7 @@ metadata:
   name: xrepository
   labels:
     pkg.crossplane.io/owner: mproffitt
-    pkg.crossplane.io/version: 0.0.1-d9b307c
+    pkg.crossplane.io/version: 0.0.1-22deb77
 spec:
   crossplane:
     version: ">=v1.17.0"
