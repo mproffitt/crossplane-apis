@@ -1,0 +1,5 @@
+resources:
+  - crossplane/source.yaml
+  - crossplane/release.yaml
+  - eso/source.yaml
+  - eso/release.yaml
