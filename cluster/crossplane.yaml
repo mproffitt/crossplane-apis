@@ -17,7 +17,7 @@ metadata:
   namespace: default
 spec:
   dependsOn:
-    - name: flux-system
+    - name: crossplane
       namespace: flux-system
   interval: 10m0s
   path: ./cluster/apps/configurations
@@ -34,7 +34,7 @@ metadata:
   namespace: default
 spec:
   dependsOn:
-    - name: flux-system
+    - name: crossplane
       namespace: flux-system
     - name: crossplane-configurations
       namespace: default
